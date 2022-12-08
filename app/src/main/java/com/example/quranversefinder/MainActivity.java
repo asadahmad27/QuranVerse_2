@@ -38,8 +38,9 @@ public class MainActivity extends AppCompatActivity {
                     VerseData QuranVerse = new VerseData();
                     int NoOfVerse = QuranVerse.getSurahAyatCount(SurahNumber-1);
                     if(AyatNumber<=NoOfVerse){
+                        int FinalVerseCount = (QuranVerse.getTotalAyatCount(SurahNumber-1))+AyatNumber;
                         QuranArabicText FinalVerse = new QuranArabicText();
-                        String FinalVerseToShow = FinalVerse.getQuranArabicText(1);
+                        String FinalVerseToShow = FinalVerse.getQuranArabicText(FinalVerseCount-1);
                         Verse.setText(FinalVerseToShow);
                     }
                     else{

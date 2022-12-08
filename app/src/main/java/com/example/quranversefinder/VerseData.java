@@ -9,6 +9,13 @@ public class VerseData {
         return surahAyatCount[surahNum];
     }
 
+    public int getTotalAyatCount(int surahNum){
+        int count=0;
+        for(int i=0;i<surahNum;i++){
+            count=count+surahAyatCount[i];
+        }
+        return count;
+    }
 }
 
 
