@@ -10,21 +10,27 @@
         android:id="@+id/Verse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="80px"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.629" />
+        app:layout_constraintVertical_bias="0.836" />
 
     <Button
         android:id="@+id/btnSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
         android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/VerseNum"
-        tools:layout_editor_absoluteX="158dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.629" />
 
     <TextView
         android:id="@+id/SuraNum"
@@ -34,19 +40,54 @@
         android:paddingBottom="50px"
         android:text="Enter Surah Num"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/VerseNum"
-        tools:layout_editor_absoluteX="92dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
 
     <TextView
         android:id="@+id/VerseNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:editable="true"
+        android:editable="false"
         android:paddingTop="50px"
         android:paddingBottom="100px"
-        android:text="Enter Para Num"
+        android:text="Enter Verse Num"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="173dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.355" />
+
+    <EditText
+        android:id="@+id/NumSura"
+        android:layout_width="158dp"
+        android:layout_height="56dp"
+        android:editable="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <EditText
+        android:id="@+id/NumAyat"
+        android:layout_width="155dp"
+        android:layout_height="79dp"
+        android:editable="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

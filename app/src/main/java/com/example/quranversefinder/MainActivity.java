@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     public TextView Verse;
     public TextView SuraNum;
-    public TextView VerseNum;
+    public TextView VerseNum, NumVerse, NumSura;
     public Button btnSearch;
 
     @Override
@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         btnSearch = findViewById(R.id.btnSearch);
         SuraNum = findViewById(R.id.SuraNum);
         VerseNum = findViewById(R.id.VerseNum);
+        NumVerse = findViewById(R.id.NumAyat);
+        NumSura = findViewById(R.id.NumSura);
 
         btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
