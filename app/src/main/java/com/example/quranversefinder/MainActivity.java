@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
     public TextView SuraNum;
     public TextView VerseNum, NumVerse, NumSura;
     public Button btnSearch;
+    int SurahNumber;
+    int AyatNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +29,15 @@ public class MainActivity extends AppCompatActivity {
 
         btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View view) {
+                SurahNumber = Integer.parseInt(NumSura.getText().toString());
+                AyatNumber = Integer.parseInt(NumSura.getText().toString());
+
+                
                 Verse.setText("I am working");
             }
+
         });
 
     }
