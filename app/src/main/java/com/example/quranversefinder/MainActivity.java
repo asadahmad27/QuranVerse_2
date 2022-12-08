@@ -34,8 +34,22 @@ public class MainActivity extends AppCompatActivity {
                 SurahNumber = Integer.parseInt(NumSura.getText().toString());
                 AyatNumber = Integer.parseInt(NumSura.getText().toString());
 
-                
-                Verse.setText("I am working");
+                if(SurahNumber<=114 && SurahNumber>0){
+                    VerseData QuranVerse = new VerseData();
+                    int NoOfVerse = QuranVerse.getSurahAyatCount(SurahNumber-1);
+                    if(AyatNumber<=NoOfVerse){
+                        QuranArabicText FinalVerse = new QuranArabicText();
+                        String FinalVerseToShow = FinalVerse.getQuranArabicText(1);
+                        Verse.setText(FinalVerseToShow);
+                    }
+                    else{
+                        Verse.setText("Wrong input of Verses");
+                    }
+
+                }
+                else{
+                    Verse.setText("Working Input of Surah");
+                }
             }
 
         });

@@ -6358,7 +6358,7 @@ public class QuranArabicText {
 
     // String[] subset = Arrays.copyOfRange(QuranArabicText, 10, 20);
 
-    public String[] GetData(int StartIndex, int EndIndex) {
+    /*public String[] GetData(int StartIndex) {
         List<String> listTemp = null;
 
         for (int i = StartIndex; i < EndIndex; i++) {
@@ -6367,5 +6367,9 @@ public class QuranArabicText {
         String[] list = listTemp.toArray(new String[]{});
 
         return list;
+    }*/
+
+    public String getQuranArabicText(int Index) {
+        return QuranArabicText[Index];
     }
 }
